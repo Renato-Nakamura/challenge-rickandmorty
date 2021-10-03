@@ -1,12 +1,10 @@
 import styled from "styled-components";
 
-var CardStyle = styled.button`
-
-    color: #4f546c;
-    border:0px;
-    padding:0px;
-    margin:10px;
-  
+const CardStyle = styled.button`
+  color: #4f546c;
+  border: 0px;
+  padding: 0px;
+  margin: 10px;
 
   .wrapper {
     margin: 2rem;
@@ -20,7 +18,7 @@ var CardStyle = styled.button`
     box-shadow: 0 0 10px 5px #e1e5ee;
     border-radius: 0.2rem;
     display: flex;
-    min-width:355px;
+    min-width: 355px;
   }
   .card_img {
     height: 11rem;
@@ -37,7 +35,6 @@ var CardStyle = styled.button`
   .card_status {
     line-height: 1.2rem;
   }
-
 
   @media screen and (min-width: 768px) {
     .wrapper {
@@ -60,7 +57,7 @@ export default function Card(props) {
   return (
     <CardStyle className="wrapper" {...props}>
       <div className="card">
-        <img src={props.img} className="card_img" alt="character"/>
+        <img src={props.img} className="card_img" alt="character" />
         <div className="card_body">
           <h2 className="card_title">{props.title}</h2>
           <p className="card_status">Status:{props.description}</p>
