@@ -19,11 +19,10 @@ var CardStyle = styled.button`
   .card {
     box-shadow: 0 0 10px 5px #e1e5ee;
     border-radius: 0.2rem;
-    min-width: 20rem;
     display: flex;
+    min-width:355px;
   }
   .card_img {
-    width: 14rem;
     height: 11rem;
     object-fit: cover;
   }
