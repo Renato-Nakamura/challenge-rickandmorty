@@ -60,7 +60,7 @@ export default function Card(props) {
   return (
     <CardStyle className="wrapper" {...props}>
       <div className="card">
-        <img src={props.img} className="card_img" />
+        <img src={props.img} className="card_img" alt="character"/>
         <div className="card_body">
           <h2 className="card_title">{props.title}</h2>
           <p className="card_status">Status:{props.description}</p>
